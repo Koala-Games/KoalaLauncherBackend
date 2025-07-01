@@ -22,3 +22,8 @@ def root():
 @app.get("/api/games")
 def get_games():
     return games_db
+
+@app.get("/api/news")
+def get_news():
+    return [{"id": 1, "title": "Welcome to Koala Launcher!"}]
+
